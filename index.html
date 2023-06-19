@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <title>Frontend Mentor | Age calculator app</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="calculator.js"></script>
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    </head>
+    <body>
+        <!-- Day DD Month MM Year YYYY -- years -- months -- days -->
+
+        <section class="card">
+            <section class="card__header">
+                <div class="card-input">
+                    <label for="day" class="card-input__label">DAY</label>
+                    <input class="card-input__text focus" type="number" id="day" placeholder="DD" autofocus />
+                    <label for="day" class="card-input__error hide">Must be a valid day</label>
+                </div>
+                <div class="card-input">
+                    <label for="month" class="card-input__label">MONTH</label>
+                    <input class="card-input__text focus" type="number" id="month" placeholder="MM" />
+                    <label for="month" class="card-input__error hide">Must be a valid month</label>
+                </div>
+                <div class="card-input">
+                    <label for="year" class="card-input__label">YEAR</label>
+                    <input class="card-input__text focus" ="number" id="year" placeholder="YYYY" />
+                    <label for="year" class="card-input__error hide">Must be in the past</label>
+                </div>
+            </section>
+            <button class="card__btn focus" id="btn-calculate"><img class="card__icon" src="assets/images/icon-arrow.svg" /></button>
+            <section class="card__body">
+                <div class="card-answer">
+                    <p class="card-answer__text"><span class="card-answer__number">--</span> years</p>
+                </div>
+                <div class="card-answer">
+                    <p class="card-answer__text"><span class="card-answer__number">--</span> months</p>
+                </div>
+                <div class="card-answer">
+                    <p class="card-answer__text"><span class="card-answer__number">--</span> days</p>
+                </div>
+            </section>
+        </section>
+    </body>
+</html>
